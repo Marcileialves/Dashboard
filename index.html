@@ -3,29 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Links Favoritos</title>
+    <title>Meu Portfólio de Dashboards</title>
+    <!-- Biblioteca de Animação AOS -->
+    <link href="https://unpkg.com" rel="stylesheet">
+    <!-- Ícones -->
+    <script src="https://unpkg.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="profile-area">
-            <div class="avatar"></div>
-            <h1 id="main-title">Carregando...</h1>
-            <p>Bem-vindo ao meu portal pessoal</p>
+    <header class="header">
+        <div class="container nav-container">
+            <h1 class="logo">Portfólio<span>BI</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#dashboards">Dashboards</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <section id="links-container" class="container">
+    <main id="home">
+        <section class="hero" data-aos="fade-down">
+            <div class="container">
+                <h2>Projetos de Visualização de Dados</h2>
+                <p>Transformando informações complexas em decisões estratégicas através do Power BI.</p>
+            </div>
+        </section>
 
+        <section id="dashboards" class="container">
+            <div class="grid" id="dashboard-grid">
+                <!-- Injetado pelo JS -->
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Html Css e JavaScript</p>
+    <footer id="contato">
+        <div class="container">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+            <div class="social-links">
+                <i data-lucide="linkedin"></i>
+                <i data-lucide="github"></i>
+                <i data-lucide="mail"></i>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com"></script>
     <script src="script.js"></script>
 </body>
 </html>
